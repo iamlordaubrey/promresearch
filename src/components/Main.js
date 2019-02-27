@@ -2,17 +2,6 @@ import React, { Component } from 'react';
 import Countries from './Countries';
 import Info from './Info';
 
-// const Main = props => {
-//   return (
-//     <div>
-//       <Countries
-//         countries={props.mainContents}
-//         onClick={this.getCountryInfo}
-//       />
-//     </div>
-//   )
-// };
-
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -54,15 +43,5 @@ class Main extends Component {
     )
   }
 }
-
-// const Countries = ({mainContents}) => {
-//   const countries = <div>{mainContents.map(x => <div> {x.name} </div>)}</div>
-//   return (
-//     <div>
-//       <Countries countryList={countries}/>
-//       <Info />
-//     </div>
-//   )
-// };
 
 export default Main;
