@@ -1,149 +1,149 @@
-html {
-  scroll-behavior: smooth;
-}
+/*html {*/
+  /*scroll-behavior: smooth;*/
+/*}*/
 
-.info_label {
+/*.info_label {*/
 
-    display: inline;
-    color: #631919;
-    font-weight: bold;
-    padding-right: 3%;
-    padding-left: 2%;
+    /*display: inline;*/
+    /*color: #631919;*/
+    /*font-weight: bold;*/
+    /*padding-right: 3%;*/
+    /*padding-left: 2%;*/
 
-}
+/*}*/
 
-.info_output {
+/*.info_output {*/
 
-    display: inline;
-    color: #008ecc;
-    font-weight: bold;
-    flex-wrap: wrap;
-    visibility: hidden;
-    font-size: 20px;
-}
+    /*display: inline;*/
+    /*color: #008ecc;*/
+    /*font-weight: bold;*/
+    /*flex-wrap: wrap;*/
+    /*visibility: hidden;*/
+    /*font-size: 20px;*/
+/*}*/
 
-.page_title_span {
+/*.page_title_span {*/
 
-    display: inline-block;
-    width: 65%;
-    vertical-align: top;
-}
+    /*display: inline-block;*/
+    /*width: 65%;*/
+    /*vertical-align: top;*/
+/*}*/
 
-.page_title {
+/*.page_title {*/
 
-    text-align: center;
-    font-size: 50px;
-    color: #2e8b57;
-    padding-top: 4%;
-    text-decoration: underline;
-    text-underline-position: under;
-}
+    /*text-align: center;*/
+    /*font-size: 50px;*/
+    /*color: #2e8b57;*/
+    /*padding-top: 4%;*/
+    /*text-decoration: underline;*/
+    /*text-underline-position: under;*/
+/*}*/
 
-.country_info_span {
+/*.country_info_span {*/
 
-    width: 32%;
-    display: inline-block;
-    border-radius: 12px;
-    border: 4px solid #fd6a02;
-    padding-bottom: .7%;
-    padding-top: .4%;
+    /*width: 32%;*/
+    /*display: inline-block;*/
+    /*border-radius: 12px;*/
+    /*border: 4px solid #fd6a02;*/
+    /*padding-bottom: .7%;*/
+    /*padding-top: .4%;*/
 
-}
+/*}*/
 
-.info_line {
+/*.info_line {*/
 
-    padding-bottom: 1%;
-}
+    /*padding-bottom: 1%;*/
+/*}*/
 
-.App {
+/*.App {*/
 
-    padding-top: 1.8%;
-}
+    /*padding-top: 1.8%;*/
+/*}*/
 
-.country_info_header_label {
-    text-align: center;
-    color: #008ecc;
-    text-decoration: underline;
-    text-underline-position: under;
-}
+/*.country_info_header_label {*/
+    /*text-align: center;*/
+    /*color: #008ecc;*/
+    /*text-decoration: underline;*/
+    /*text-underline-position: under;*/
+/*}*/
 
-.region_container {
+/*.region_container {*/
 
-    width: 23%;
-    padding-left: 1%;
-    padding-right: 2%;
-}
+    /*width: 23%;*/
+    /*padding-left: 1%;*/
+    /*padding-right: 2%;*/
+/*}*/
 
-.sort_method_list {
+/*.sort_method_list {*/
 
-    vertical-align: top;
-}
+    /*vertical-align: top;*/
+/*}*/
 
-.sort_method_list_span {
-    vertical-align: top;
-}
+/*.sort_method_list_span {*/
+    /*vertical-align: top;*/
+/*}*/
 
-.one_region_list {
+/*.one_region_list {*/
 
-    vertical-align: top;
-}
+    /*vertical-align: top;*/
+/*}*/
 
-.row_of_regions {
+/*.row_of_regions {*/
 
-    padding-bottom: 3%;
-    padding-left: 2%;
-}
+    /*padding-bottom: 3%;*/
+    /*padding-left: 2%;*/
+/*}*/
 
-.all_region_containers {
+/*.all_region_containers {*/
 
-    padding-top: 2%;
-}
+    /*padding-top: 2%;*/
+/*}*/
 
-.country {
-    color: #631919;
-    font-weight: bold;
-}
+/*.country {*/
+    /*color: #631919;*/
+    /*font-weight: bold;*/
+/*}*/
 
-.sort_method {
-    color: #008ecc;
-    font-weight: bold;
-}
+/*.sort_method {*/
+    /*color: #008ecc;*/
+    /*font-weight: bold;*/
+/*}*/
 
-.region_list_header_label {
-    display: inline;
-    color: #2e8b57;
-    text-decoration: underline;
-    text-underline-position: under;
-    padding-left: 20%;
-    font-weight: bold;
+/*.region_list_header_label {*/
+    /*display: inline;*/
+    /*color: #2e8b57;*/
+    /*text-decoration: underline;*/
+    /*text-underline-position: under;*/
+    /*padding-left: 20%;*/
+    /*font-weight: bold;*/
 
 
-}
+/*}*/
 
-.region_list_header {
-    width: 100%;
-    display: block;
-    padding-bottom: 10px;
-}
+/*.region_list_header {*/
+    /*width: 100%;*/
+    /*display: block;*/
+    /*padding-bottom: 10px;*/
+/*}*/
 
-.one_region_list_span {
+/*.one_region_list_span {*/
 
-    display: inline-block;
-}
+    /*display: inline-block;*/
+/*}*/
 
-.sort_method_list_header_label {
-    display: inline;
-    color: #ff0000;
+/*.sort_method_list_header_label {*/
+    /*display: inline;*/
+    /*color: #ff0000;*/
 
-}
+/*}*/
 
-.sort_method_list_header {
-    width: 100%;
-    display: block;
-    padding-bottom: 6px;
-}
+/*.sort_method_list_header {*/
+    /*width: 100%;*/
+    /*display: block;*/
+    /*padding-bottom: 6px;*/
+/*}*/
 
-.sort_method_list_span {
+/*.sort_method_list_span {*/
 
-    display: inline-block;
-}
+    /*display: inline-block;*/
+/*}*/

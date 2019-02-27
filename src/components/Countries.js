@@ -21,7 +21,6 @@ class Countries extends Component {
     } = this.props;
 
     const handleClick = (country) => {
-      console.log('in country handleClick');
       countryClick(country)
     };
 

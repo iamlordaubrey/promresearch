@@ -8,7 +8,6 @@ const Sidebar = props => {
   }
 
   const handleClick = (continent) => {
-    console.log('do we ever get here?')
     props.onClick(continent)
   };
 

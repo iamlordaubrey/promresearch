@@ -19,11 +19,15 @@ class Main extends Component {
   }
 
   getCountryInfo = (country) => {
-    console.log('country clicked', country)
     let newCountryInfo = {
       'name': country.name,
       'alpha2Code': country.alpha2Code,
-      'region': country.region
+      'capital': country.capital,
+      'region': country.region,
+      'population': country.population,
+      'area': country.area,
+      'timezones': country.timezones,
+      'languages': country.languages
     };
 
     this.setState({
