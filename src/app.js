@@ -6,12 +6,15 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 
-import './app.css';
-
 const styles = theme => ({
   root: {
     display: 'flex',
   },
+  center_vh: {
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+  }
 });
 
 const COUNTRIES_API = 'https://restcountries.eu/rest/v2/all';
@@ -61,7 +64,7 @@ class App extends Component {
     const { classes } = this.props;
 
     if (!isLoaded) {
-      return <div> loading </div>
+      return <div className={`${classes.root} ${classes.center_vh}`}>Loading...</div>
     }
 
     const continents = [...new Set(items

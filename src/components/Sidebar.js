@@ -22,7 +22,7 @@ const Sidebar = props => {
   const { classes, continents } = props;
 
   if (continents.length < 1) {
-    return <div>Loading...</div>
+    return <div/>
   }
 
   const handleClick = (continent) => {

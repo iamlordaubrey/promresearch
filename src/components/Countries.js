@@ -46,9 +46,10 @@ class Countries extends Component {
       countryClick(country)
     };
 
-    if (!countries) {
-      return <div>Loading...</div>
+    if (countries.length < 1) {
+      return <div/>
     }
+
     console.log('in state', this.state)
     const country = countries
       .sort((a, b) => a[this.state.sortBy]
@@ -64,7 +65,7 @@ class Countries extends Component {
         </ListItem>
     ));
 
-    let sortButtons = <div></div>
+    let sortButtons = <div/>;
     if (country.length > 0) {
       sortButtons = (
         <div>

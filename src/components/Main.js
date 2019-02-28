@@ -12,6 +12,13 @@ const styles = theme => ({
     display: 'flex',
     alignItems: 'flex-start'
   },
+  center_vh: {
+    position: 'absolute',
+    left: '40%',
+    top: '20%',
+    fontWeight: 600,
+    fontSize: 30,
+  },
 });
 
 class Main extends Component {
@@ -21,11 +28,17 @@ class Main extends Component {
       countryInfo: {}
     }
   }
+  componentDidMount() {
+    this.setState({
+      temp: true
+    })
+  }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
     if (prevProps.region !== this.props.region) {
       this.setState({
-        countryInfo: {}
+        countryInfo: {},
+        temp: false
       })
     }
   }
@@ -49,6 +62,15 @@ class Main extends Component {
 
   render() {
     const { classes } = this.props;
+
+    if (this.state.temp) {
+      return (
+        <div className={classes.center_vh}>
+          <p>Please select a continent</p>
+        </div>
+      )
+    }
+
     return (
       <main className={classes.content}>
         <Countries
