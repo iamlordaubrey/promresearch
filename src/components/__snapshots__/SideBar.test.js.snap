@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SideBar /> renders sidebar 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <Sidebar
+    continents={
+      Array [
+        "asia",
+        "africa",
+      ]
+    }
+    onClick={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "continents": Array [
+        "asia",
+        "africa",
+      ],
+      "onClick": [MockFunction],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div>
+        <ul>
+          <li>
+            asia
+          </li>
+          <li>
+            africa
+          </li>
+        </ul>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul>
+          <li
+            onClick={[Function]}
+          >
+            asia
+          </li>
+          <li
+            onClick={[Function]}
+          >
+            africa
+          </li>
+        </ul>,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <ul>
+            <li>
+              asia
+            </li>
+            <li>
+              africa
+            </li>
+          </ul>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                onClick={[Function]}
+              >
+                asia
+              </li>,
+              <li
+                onClick={[Function]}
+              >
+                africa
+              </li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <li>
+                asia
+              </li>,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": "asia",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                "asia",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": <li>
+                africa
+              </li>,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": "africa",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                "africa",
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "continents": Array [
+          "asia",
+          "africa",
+        ],
+        "onClick": [MockFunction],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div>
+          <ul>
+            <li>
+              asia
+            </li>
+            <li>
+              africa
+            </li>
+          </ul>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul>
+            <li
+              onClick={[Function]}
+            >
+              asia
+            </li>
+            <li
+              onClick={[Function]}
+            >
+              africa
+            </li>
+          </ul>,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <ul>
+              <li>
+                asia
+              </li>
+              <li>
+                africa
+              </li>
+            </ul>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  onClick={[Function]}
+                >
+                  asia
+                </li>,
+                <li
+                  onClick={[Function]}
+                >
+                  africa
+                </li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <li>
+                  asia
+                </li>,
+                "key": "0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "asia",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "asia",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": <li>
+                  africa
+                </li>,
+                "key": "1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "africa",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "africa",
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
