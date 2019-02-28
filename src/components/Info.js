@@ -1,29 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = theme => ({
+  label: {
+    fontWeight: 600,
+  },
+  toolbar: theme.mixins.toolbar,
+});
 
 const CountryInformation = (props) => {
-  const currentCountryInfo = props.currentCountryInfo;
+  const { classes, currentCountryInfo } = props;
 
   if (Object.keys(currentCountryInfo).length < 1) {
-    return <div></div>
+    return <div />
   }
 
   return (
     <div>
-      <ul>
-        <li>Name: {currentCountryInfo.name}</li>
-        <li>Alpha2Code: {currentCountryInfo.alpha2Code}</li>
-        <li>Capital: {currentCountryInfo.capital}</li>
-        <li>Region: {currentCountryInfo.region}</li>
-        <li>Population: {currentCountryInfo.population}</li>
-        <li>Area: {currentCountryInfo.area}</li>
-        <li>Number of timezones: {currentCountryInfo.timezones.length}</li>
-        <li>List of languages spoken:</li>
+        <p><span className={classes.label}>Name:</span> {currentCountryInfo.name} </p>
+        <p><span className={classes.label}>Alpha2Code:</span> {currentCountryInfo.alpha2Code}</p>
+        <p><span className={classes.label}>Capital:</span> {currentCountryInfo.capital} </p>
+        <p><span className={classes.label}>Region:</span> {currentCountryInfo.region} </p>
+        <p><span className={classes.label}>Population:</span> {currentCountryInfo.population} </p>
+        <p><span className={classes.label}>Area:</span> {currentCountryInfo.area} </p>
+        <p><span className={classes.label}>Number of timezones:</span> {currentCountryInfo.timezones.length}</p>
+        <p><span className={classes.label}>List of languages spoken:</span></p>
         <ul>
           {currentCountryInfo.languages.map(language => (<li key={language.name}>{language.name}</li>))}
         </ul>
-      </ul>
     </div>
   )
 };
 
-export default CountryInformation;
+CountryInformation.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(CountryInformation);

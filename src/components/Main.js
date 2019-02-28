@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 import Countries from './Countries';
 import Info from './Info';
+
+const styles = theme => ({
+  content: {
+    marginTop: 30,
+    flexGrow: 1,
+    padding: theme.spacing.unit * 3,
+    display: 'flex',
+    alignItems: 'flex-start'
+  },
+});
 
 class Main extends Component {
   constructor(props) {
@@ -37,16 +48,21 @@ class Main extends Component {
   };
 
   render() {
+    const { classes } = this.props;
     return (
-      <div>
+      <main className={classes.content}>
         <Countries
           countries={this.props.mainContents}
           onClick={this.getCountryInfo}
         />
         <Info currentCountryInfo={this.state.countryInfo}/>
-      </div>
+      </main>
     )
   }
 }
 
-export default Main;
+Main.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Main);

@@ -1,9 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText'
+
+const sidebarWidth = 140;
+const styles = theme => ({
+  sidebar: {
+    width: sidebarWidth,
+    flexShrink: 0,
+  },
+  sidebarPaper: {
+    width: sidebarWidth,
+  },
+  toolbar: theme.mixins.toolbar,
+});
+
 
 const Sidebar = props => {
-  const continents = props.continents;
+  const { classes, continents } = props;
 
-  if (!continents) {
+  if (continents.length < 1) {
     return <div>Loading...</div>
   }
 
@@ -12,21 +30,28 @@ const Sidebar = props => {
   };
 
   const continent = continents.map((continent, index) => (
-    <li key={index} onClick={e => {
+    <ListItem button key={index} onClick={e => {
       e.preventDefault();
       handleClick(continent)
     }}>
-      {continent}
-    </li>
+      <ListItemText primary={continent} />
+    </ListItem>
   ));
 
   return (
-    <div>
-      <ul>
+    <div className={classes.sidebar} variant="permanent" classes={{
+      paper: classes.sidebarPaper,
+    }}>
+      <div className={classes.toolbar} />
+      <List>
         {continent}
-      </ul>
+      </List>
     </div>
   )
 };
 
-export default Sidebar;
+Sidebar.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Sidebar);
